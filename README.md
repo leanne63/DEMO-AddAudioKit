@@ -27,23 +27,23 @@ Instructions for the process of adding AudioKit to the app can be found:
 
 - on my [Medium feed (video link and text)](https://medium.com/@leannemlis/how-to-integrate-audiokit-into-an-ios-project-31e6c7c1c04a)
 
-- on YouTube:
-[![AudioKit iOS Setup](https://i.ytimg.com/vi/iUvWxWvRvo8/1.jpg)](https://youtu.be/iUvWxWvRvo8 "AudioKit iOS Setup")
+- on YouTube:  
+[![AudioKit iOS Setup](https://i.ytimg.com/vi/iUvWxWvRvo8/3.jpg)](https://youtu.be/iUvWxWvRvo8 "AudioKit iOS Setup")
 
 - or, here, in text, step by step:
 
-1. Get the framework:
+**1. Get the framework:**
 
 - [Download the framework.](http://audiokit.io/downloads/) I use the [AudioKit-iOS-4.2.2.zip](http://github.com/audiokit/AudioKit/releases/download/v4.2.2/AudioKit-iOS-4.2.2.zip) in the video. The .zip files contain the pre-compiled binaries for the respective OS, along with license and other files you might be interested in checking out. You can get the full source instead, if you’d like. The full source contains a shell script to compile all the binaries. Once you’ve compiled and have the framework folders available, continue with the following instructions. (You won’t need to unzip those, of course!)
 
 - Unzip the download, if macOS hasn’t done that for you automatically. The .zip file contains a single folder, named appropriately AudioKit-iOS or the equivalent for whichever OS you download.
 
-2. Add the framework to your bundle:
+**2. Add the framework to your bundle:**
 
 - Copy the AudioKit-iOS folder into your project’s bundle folder. (That would be the one with all of your project’s base files (not the folder with the.xcodeproj in it).  
   Note: you actually only need the .framework subfolders within that folder. You can copy those .framework folders directly into the bundle folder — or, you can copy the entire AudioKit-... folder into the bundle folder, if you prefer a subfolder for organization. Either way, the other files (license, README, etc) are not needed for functionality; however, I leave them in the folder. As of this writing, AudioKit is offered on a MIT license, meaning that all copyright and license notices must be preserved; then, you may use the frameworks in any way you choose.
 
-3. Update your project settings to include AudioKit:
+**3. Update your project settings to include AudioKit:**
 
 - Click on the project name in the navigator pane to display your project settings window.
 
@@ -66,4 +66,4 @@ Instructions for the process of adding AudioKit to the app can be found:
 
 - Add the value -lstdc++ This tells Xcode to link with the standard C++ library, which AudioKit requires.
 
-4. Build the project!
+**4. Build the project!**
